@@ -1,3 +1,14 @@
+.just-even {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,9 +171,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+nav h1.gdm-logo {
+  font-size: 4rem;
+  margin: 1rem 0 1rem 0;
+}
+nav .gdm-nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+nav .gdm-nav .gdm-links {
+  margin: 0 1rem 1rem 1rem;
+}
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -212,11 +243,29 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .btn {
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  width: 25%;
+  min-width: 100px;
+  text-align: center;
+}
+.home .walk .walk-text .gdm-btn {
+  color: #F1F1F1;
+  background-color: #22283A;
+  border: #22283A 2px solid;
+}
+.home .walk .walk-text .gdm-btn:hover {
+  color: #22283A;
+  background-color: #F1F1F1;
+  border: #22283A 2px solid;
+}
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;

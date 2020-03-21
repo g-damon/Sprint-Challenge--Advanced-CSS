@@ -1,1 +1,27 @@
 // Mixins Here
+
+.just-even {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.para-btn (@btn-color; @btn-bg; @btn-border) {
+    color: @btn-color;
+    background-color: @btn-bg;
+    border: @btn-border;
+
+    &:hover {
+        color: @btn-bg;
+        background-color: @btn-color;
+        border: @btn-border;
+    }
+}
+
